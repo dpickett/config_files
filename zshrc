@@ -24,3 +24,6 @@ setopt prompt_subst
 
 # prompt
 export PS1='[${SSH_CONNECTION+"%n@%m:"}%~] '
+
+#ability to mate gem
+#TODO make zsh equivalent

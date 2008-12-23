@@ -28,9 +28,13 @@ colors
 # enable colored output from ls, etc
 export CLICOLOR=1
 
+# set non-default colors for ls
+# for options, see http://www.mjxg.com/index.py/tags/zsh
+export LSCOLORS='Gxfxcxdxcxegedabagacad'
+
 # expand functions in the prompt
 setopt prompt_subst
 
 # prompt
-export PS1='[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info)] '
+export PS1='[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[yellow]%}%~%{$reset_color%}$(git_prompt_info)] '
 
