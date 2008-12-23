@@ -16,3 +16,5 @@ alias gp='cd ~/gemplugins'
 alias gpp='git pull && git push'
 alias gstat='git status'
 alias gtk='gitk --all &'
+
+alias ras='ruby script/server'

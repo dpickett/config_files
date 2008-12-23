@@ -36,5 +36,5 @@ export LSCOLORS='Gxfxcxdxcxegedabagacad'
 setopt prompt_subst
 
 # prompt
-export PS1='[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[yellow]%}%~%{$reset_color%}$(git_prompt_info)] '
+export PS1='[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[cyan]%}%~%{$reset_color%}$(git_prompt_info)] '
 
