@@ -127,3 +127,44 @@ highlight Folded  guibg=#0A0A0A guifg=#9090D0
 " Numbers
 set number
 set numberwidth=5
+
+" bind command-/ to toggle comment
+" requires NERD Commenter to be installed:
+" http://www.vim.org/scripts/script.php?script_id=1218
+nmap <D-/> ,c<space>
+vmap <D-/> ,c<space>
+imap <D-/> <C-O>,c<space>
+
+let mapleader = ","
+
+" bind \d to toggle file browser
+" requires NERDTree
+nmap <leader>d :NERDTreeToggle<CR>
+
+" binds \ t to textmate-style fuzzy finder
+nmap <leader>t :FuzzyFinderTextMate<CR>
+let g:fuzzy_matching_limit=60 " this seems to help performance
+let g:fuzzy_ceiling=20000
+
+" bind command-] to shift right
+nmap <D-]> >>
+vmap <D-]> >>
+imap <D-]> <C-O>>>
+
+" bind command-[ to shift left
+nmap <D-[> <<
+vmap <D-[> <<
+imap <D-[> <C-O><<
+
+" open tabs with command-<tab number>
+  map <D-1> :tabn 1<CR>
+  map <D-2> :tabn 2<CR>
+  map <D-3> :tabn 3<CR>
+  map <D-4> :tabn 4<CR>
+  map <D-5> :tabn 5<CR>
+  map <D-6> :tabn 6<CR>
+  map <D-7> :tabn 7<CR>
+  map <D-8> :tabn 8<CR>
+  map <D-9> :tabn 9<CR>
+
+
