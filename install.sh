@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 cutstring="DO NOT EDIT BELOW THIS LINE"
 
@@ -33,3 +33,4 @@ for name in *; do
     fi
   fi
 done
+
