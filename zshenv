@@ -10,3 +10,6 @@ export DYLD_LIBRARY_PATH="$MAGICK_HOME/lib"
 export PATH=$MAGICK_HOME/bin:/opt/local/bin:/opt/local/sbin:$PATH
 
 export LC_CTYPE=en_US.UTF-8
+
+export PAGER="most"
+
