@@ -146,6 +146,13 @@ nmap <leader>t :FuzzyFinderTextMate<CR>
 let g:fuzzy_matching_limit=60 " this seems to help performance
 let g:fuzzy_ceiling=20000
 
+" binds \ T to taglist (sorta like textmate apple-shift-t)
+map <leader>T :TlistToggle<CR>
+let Tlist_Show_Menu=1
+let Tlist_GainFocus_On_ToggleOpen=1
+let Tlist_Close_OnSelect=1
+let Tlist_Compact_Format=1
+
 " bind command-] to shift right
 nmap <D-]> >>
 vmap <D-]> >>
@@ -167,4 +174,24 @@ imap <D-[> <C-O><<
   map <D-8> :tabn 8<CR>
   map <D-9> :tabn 9<CR>
 
+ " hashrocket shortcut
+  imap <C-l> <Space>=><Space> 
 
+" window splitting mappings
+" split vertically with <leader> v
+" split horizontally with <leader> s
+nmap <leader>v :vsplit<CR> <C-w><C-w>
+nmap <leader>s :split<CR> <C-w><C-w>
+
+" Make it way easier to switch windows (<leader>w)
+nmap <leader>w <C-w><C-w>_
+
+set nocompatible          " We're running Vim, not Vi!
+syntax on                 " Enable syntax highlighting
+filetype plugin indent on " Enable filetype-specific indenting and plugins
+
+set incsearch             " Incremental searching
+set hlsearch              " Highlight search results once found:
+                          " http://vim.wikia.com/wiki/Highlight_all_search_pattern_matches
+set smarttab              "sta:   helps with backspacing because of expandtab
+ 
