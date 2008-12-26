@@ -153,6 +153,10 @@ let Tlist_GainFocus_On_ToggleOpen=1
 let Tlist_Close_OnSelect=1
 let Tlist_Compact_Format=1
 
+" bind save
+nmap <D-s> :w<CR>
+imap <D-s> <Esc>:w<CR>a
+
 " bind command-] to shift right
 nmap <D-]> >>
 vmap <D-]> >>
