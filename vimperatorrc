@@ -25,7 +25,19 @@ set titlestring=
 :imap <C-v> <C-v>
 :imap <C-c> <C-c>
 :imap <C-x> <C-x>
-:imap <C-k> <C-k> 
+:imap <C-k> <C-k>
+
+"Map tab keys
+:imap <C-1> <C-1> 
+:imap <C-2> <C-2>
+:imap <C-3> <C-3>
+:imap <C-4> <C-4>
+:imap <C-5> <C-5>
+:imap <C-6> <C-6>
+:imap <C-7> <C-7>
+:imap <C-8> <C-8>
+:imap <C-9> <C-9>
+:imap <C-0> <C-0>
 
 "Use the nicer address bar  
 :noremap o <C-l> 
