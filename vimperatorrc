@@ -2,7 +2,7 @@
 :set guioptions+=mT
 
 "fix title string
-set titlestring=-
+set titlestring=
 
 "Turn off the show tabs by default.
 :set showtabline=1
@@ -24,10 +24,10 @@ set titlestring=-
 :imap <C-v> <C-v>
 
 "Use the nicer address bar  
-noremap o <C-l>  
-noremap t :tabopen<CR>
+:noremap o <C-l>  
+:noremap t :tabopen<CR>
 
 "Easier pass-through  
-noremap ' <C-v>  
-noremap " <C-q>  
-noremap \ '
+:noremap ' <C-v>  
+:noremap " <C-q>  
+:noremap \ '
