@@ -6,6 +6,7 @@ set titlestring=
 
 "Turn off the show tabs by default.
 :set showtabline=1
+:set visualbell 
 
 "Turn session tracking off.
 :set! browser.startup.page=1
@@ -20,14 +21,18 @@ set titlestring=
 "Map Ctrl + t for new tabs
 :map <C-t> :tabopen<Enter>
 
-"Map paste operation normally.
+"Map cut, copy and paste operation normally.
 :imap <C-v> <C-v>
+:imap <C-c> <C-c>
+:imap <C-x> <C-x>
+:imap <C-k> <C-k> 
 
 "Use the nicer address bar  
-:noremap o <C-l>  
+:noremap o <C-l> 
 :noremap t :tabopen<CR>
 
 "Easier pass-through  
 :noremap ' <C-v>  
 :noremap " <C-q>  
 :noremap \ '
+
