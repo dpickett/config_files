@@ -39,8 +39,8 @@ if has("autocmd")
   augroup vimrcEx
   au!
 
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
+  " For all text files set 'textwidth' to 100 characters.
+  autocmd FileType text setlocal textwidth=100
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
@@ -131,15 +131,32 @@ set numberwidth=5
 " bind command-/ to toggle comment
 " requires NERD Commenter to be installed:
 " http://www.vim.org/scripts/script.php?script_id=1218
-nmap <D-/> ,c<space>
-vmap <D-/> ,c<space>
-imap <D-/> <C-O>,c<space>
+nmap <D-/> ,cc
+vmap <D-/> ,cc
+imap <D-/> ,cc
 
 let mapleader = ","
 
 " bind \d to toggle file browser
 " requires NERDTree
 nmap <leader>d :NERDTreeToggle<CR>
+
+" Leader shortcuts for Rails commands
+map <Leader>m :Rmodel
+map <Leader>c :Rcontroller
+map <Leader>v :Rview
+map <Leader>u :Runittest
+map <Leader>f :Rfunctionaltest
+map <Leader>tm :RTmodel
+map <Leader>tc :RTcontroller
+map <Leader>tv :RTview
+map <Leader>tu :RTunittest
+map <Leader>tf :RTfunctionaltest
+map <Leader>sm :RSmodel
+map <Leader>sc :RScontroller
+map <Leader>sv :RSview
+map <Leader>su :RSunittest
+map <Leader>sf :RSfunctionaltest
 
 " binds \ t to textmate-style fuzzy finder
 nmap <leader>t :FuzzyFinderTextMate<CR>
@@ -187,6 +204,8 @@ imap <D-[> <C-O><<
 nmap <leader>v :vsplit<CR> <C-w><C-w>
 nmap <leader>s :split<CR> <C-w><C-w>
 
+set splitright
+
 " Make it way easier to switch windows (<leader>w)
 nmap <leader>w <C-w><C-w>_
 
@@ -199,3 +218,8 @@ set hlsearch              " Highlight search results once found:
                           " http://vim.wikia.com/wiki/Highlight_all_search_pattern_matches
 set smarttab              "sta:   helps with backspacing because of expandtab
  
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1 
+

@@ -1,5 +1,5 @@
 "Turn the menu and toolbar on.
-:set guioptions+=mT
+:set guioptions+=mTB
 
 "fix title string
 set titlestring=
@@ -25,7 +25,6 @@ set titlestring=
 :imap <C-v> <C-v>
 :imap <C-c> <C-c>
 :imap <C-x> <C-x>
-:imap <C-k> <C-k>
 
 "Map tab keys
 :imap <C-1> <C-1> 
@@ -38,13 +37,14 @@ set titlestring=
 :imap <C-8> <C-8>
 :imap <C-9> <C-9>
 :imap <C-0> <C-0>
+:imap <C-e> <C-e>
 
 "Use the nicer address bar  
 :noremap o <C-l> 
 :noremap t :tabopen<CR>
 
 "Easier pass-through  
-:noremap ' <C-v>  
-:noremap " <C-q>  
-:noremap \ '
+:noremap \' <C-v>  
+:noremap \" <C-q>  
+:noremap \ \'
 

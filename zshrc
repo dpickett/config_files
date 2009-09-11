@@ -5,16 +5,10 @@ compinit
 # automatically enter directories without cd
 setopt auto_cd
 
-# use vim as an editor
-export EDITOR=vim
-
 # aliases
 if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
 fi
-
-# vi mode
-bindkey -v
 
 # use incremental search
 bindkey ^R history-incremental-search-backward
@@ -27,3 +21,10 @@ export PS1='[${SSH_CONNECTION+"%n@%m:"}%~] '
 
 #ability to mate gem
 #TODO make zsh equivalent
+#
+# Other zsh settings
+zmodload -i zsh/complist
+zstyle ':completion:*' menu select=10
+zstyle ':completion:*' verbose yes
+setopt hist_ignore_all_dups
+

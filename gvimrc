@@ -1,7 +1,7 @@
 " Window size
-set winwidth=85
-let g:halfsize = 120
-let g:fullsize = 171
+set winwidth=100
+let g:halfsize = 140
+let g:fullsize = 181
 set lines=50
 let &columns = g:halfsize
 
