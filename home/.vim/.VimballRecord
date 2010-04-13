@@ -1,2 +1,0 @@
-snippy_plugin.vba: call delete('/Users/jferris/.vim/plugin/snippetsEmu.vim')|call delete('/Users/jferris/.vim/doc/snippets_emu.txt')
-manpageview.vba: call delete('/Users/dpickett/.vim/plugin/manpageviewPlugin.vim')|call delete('/Users/dpickett/.vim/autoload/manpageview.vim')|call delete('/Users/dpickett/.vim/syntax/man.vim')|call delete('/Users/dpickett/.vim/syntax/mankey.vim')|call delete('/Users/dpickett/.vim/syntax/info.vim')|call delete('/Users/dpickett/.vim/syntax/manphp.vim')|call delete('/Users/dpickett/.vim/doc/manpageview.txt')
