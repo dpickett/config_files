@@ -28,3 +28,4 @@ zstyle ':completion:*' menu select=10
 zstyle ':completion:*' verbose yes
 setopt hist_ignore_all_dups
 
+if [[ -s /Users/dpickett/.rvm/scripts/rvm ]] ; then source /Users/dpickett/.rvm/scripts/rvm ; fi
